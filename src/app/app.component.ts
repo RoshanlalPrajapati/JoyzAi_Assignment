@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'joyzAI';
+  tree :any= {
+    "a": ["b", "c"],
+    "b": ["d", "e"],
+    "c": ["f", "g"],
+    "e": ["h", "i"],
+    "f": ["j", "k"]
+  };
+  root:any = 'a'
+
+  methodToGetTreeStructure(key:any):any{
+    return this.tree[key] || [];
+  }
 }
