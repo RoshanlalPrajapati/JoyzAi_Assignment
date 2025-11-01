@@ -13,7 +13,6 @@ export class AppComponent {
     "e": ["h", "i"],
     "f": ["j", "k"]
   };
-  root:any = 'a'
 
   methodToGetTreeStructure(key:any):any{
     return this.tree[key] || [];
